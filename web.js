@@ -4,7 +4,7 @@ app.use(express.logger());
 var buffer =new Buffer("I'm a Fluffer","utf-8");
 console.log(buffer);
 app.get('/', function(request, response) {
-  response.send('Hello World3!');
+  response.send(buffer);
 });
 
 var port = process.env.PORT || 5000;
